@@ -88,7 +88,7 @@ export default function Home() {
                 Self-Driving Reinforcement Learning Models
                 </p>
                 <p className='font-burtons text-center'>
-                Full-Stack Development
+                Full-Stack Development and engineering
                 </p>
             </div>
           </div>
