@@ -14,7 +14,7 @@ import paper from "../public/paper.jpg";
 import kart2 from "../public/racekart2.png";
 import goose from "../public/goose.png";
 
-function chess_page() {
+function ChessPage() {
   const [darkMode, setDarkMode] = useState(false);
   const iconColor = darkMode ? 'white' : 'black';
   return (
@@ -54,4 +54,4 @@ function chess_page() {
   )
 }
 
-export default chess_page;
+export default ChessPage;

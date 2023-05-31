@@ -1,3 +1,5 @@
+"use client"; // This is a client component 👈🏽
+
 import Head from 'next/head';
 import Image from 'next/image';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
@@ -27,7 +29,7 @@ import differences from "../public/differences.png"
 import toy_example from "../public/toy_example.png";
 import drone from "../public/drone.png";
 
-function goose_page() {
+function GoosePage() {
   const [darkMode, setDarkMode] = useState(false);
   const iconColor = darkMode ? 'white' : 'black';
   return (
@@ -164,4 +166,4 @@ function goose_page() {
   )
 }
 
-export default goose_page;
+export default GoosePage;

@@ -1,3 +1,5 @@
+"use client"; // This is a client component 👈🏽
+
 import Head from 'next/head';
 import Image from 'next/image';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
@@ -22,7 +24,7 @@ import sentiment from "../public/sentiment.png";
 import document_list_page from "../public/document_list_page.png";
 import doc_screen from "../public/doc_screen.png";
 
-function doc_read() {
+function DocRead() {
   const [darkMode, setDarkMode] = useState(false);
   const iconColor = darkMode ? 'white' : 'black';
   return (
@@ -189,4 +191,4 @@ function doc_read() {
   )
 }
 
-export default doc_read;
+export default DocRead;

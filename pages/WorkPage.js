@@ -15,9 +15,10 @@ import kart2 from "../public/racekart2.png";
 import goose from "../public/goose.png";
 import chess2 from "../public/chess2.png";
 import Pytux from './Pytux';
-import chess_page from './chess';
-import doc_read from './doc_read';
-import goose_page from './goose_page';
+import chess_page from './ChessPage';
+import doc_read from './DocRead';
+import goose_page from './GoosePage';
+import Link from 'next/link';
 
 function WorkPage() {
   const [darkMode, setDarkMode] = useState(false);
@@ -45,28 +46,28 @@ function WorkPage() {
           </div>
           <div className='gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-            <a href="/Pytux">
+            <Link href="/Pytux">
                 <Image src={kart2} width={200} height={200} className='mx-auto' />
-            </a>
+            </Link>
 
                 <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Self-Driving Kart</h3>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-            <a href="/doc_read">
+            <Link href="/DocRead">
                 <Image src={paper} width={200} height={200} className='mx-auto' />
-            </a>
+            </Link>
                 <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Smart PDF Analyzer</h3>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-            <a href="/goose_page">
+            <Link href="/GoosePage">
                 <Image src={goose} width={200} height={200} className='mx-auto' />
-            </a>
+            </Link>
                 <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Autonomous Goose-Chaser</h3>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-            <a href="/chess">
+            <Link href="/ChessPage">
                 <Image src={chess2} width={200} height={200} className='mx-auto' />
-            </a>
+            </Link>
                 <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Android Studio Chess</h3>
             </div>
           </div>
