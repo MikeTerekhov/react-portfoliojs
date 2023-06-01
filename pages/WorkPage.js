@@ -45,11 +45,16 @@ function WorkPage() {
             <h3 className = "text-5xl py-1 dark:text-white font-burtons text-center">Projects</h3>
           </div>
           <div className='gap-10'>
+          <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <Link href="/ChessPage">
+                <Image src={chess2} width={200} height={200} className='mx-auto' />
+            </Link>
+                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Android Chess App</h3>
+            </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
             <Link href="/Pytux">
                 <Image src={kart2} width={200} height={200} className='mx-auto' />
             </Link>
-
                 <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Self-Driving Kart</h3>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
@@ -63,12 +68,6 @@ function WorkPage() {
                 <Image src={goose} width={200} height={200} className='mx-auto' />
             </Link>
                 <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Autonomous Goose-Chaser</h3>
-            </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-            <Link href="/ChessPage">
-                <Image src={chess2} width={200} height={200} className='mx-auto' />
-            </Link>
-                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Android Studio Chess</h3>
             </div>
           </div>
           <div className='py-4 h-20'></div>

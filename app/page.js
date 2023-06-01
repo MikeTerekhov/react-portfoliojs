@@ -12,6 +12,11 @@ import { useState } from "react";
 import Navbar from './Navbar';
 import WorkPage from '@/pages/WorkPage';
 
+import gears from "../public/gears.png";
+import computer from "../public/computer.png";
+import me from "../public/me.png";
+import pencil from "../public/pencil.png";
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const iconColor = darkMode ? 'white' : 'black';
@@ -39,6 +44,8 @@ export default function Home() {
                 <li><a
                 className='bg-gradient-to-r from-cyan-500 to-violet-400 text-white px-4 py-2 rounded-md ml-8'
                 href = "https://drive.google.com/file/d/1kTqMSNQEF80Q5FdJ91tSxPpc0_vhYlWw/view?usp=share_link"
+                target="_blank"
+                rel="noopener noreferrer"
                 >Resume</a></li>
               </ul>
             </nav>
@@ -67,29 +74,125 @@ export default function Home() {
             <h3 className = "text-3xl py-1 dark:text-white font-burtons">My Background</h3>
           </div>
           <div className='lg:flex gap-10'>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-                <Image src={design} width={100} height={100} className='mx-auto'/>
-                <h3 className='text-lg font-medium pt-8 pb-2 font-burtons'> Relevant Courses Taken</h3>
-                <p className='font-burtons'>
-                Reinforcement Learning, Intro to Software Engineering, Intro to Machine Learning, Full Stack Software Development, Algorithms for Engineers, Signals and Systems
-                </p>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:w-1/3'>
+                <Image src={pencil} width={100} height={100} className='mx-auto'/>
+                <h3 className='text-lg font-medium pt-8 pb-2 font-burtons'>Courses Taken</h3>
+                <h4 className='font-burtons'>
+                Reinforcement Learning
+                </h4>
+                <h4 className='font-burtons'>
+                Intro to Software Engineering
+                </h4>
+                <h4 className='font-burtons'>
+                Intro to Machine Learning
+                </h4>
+                <h4 className='font-burtons'>
+                Full Stack Software Development
+                </h4>
+                <h4 className='font-burtons'>
+                Algorithms for Engineers
+                </h4>
+                <h4 className='font-burtons'>
+                Signals and Systems
+                </h4>
+                <h4 className='font-burtons'>
+                Thermodynamics
+                </h4>
+                <h4 className='font-burtons'>
+                Fluid Mechanics
+                </h4>
+                <h4 className='font-burtons'>
+                Material Science
+                </h4>
+                <h4 className='font-burtons'>
+                Mechanics of Materials
+                </h4>
+                <h4 className='font-burtons'>
+                Intro to CAD
+                </h4>
+                <h4 className='font-burtons'>
+                Manufacturing
+                </h4>
+                <h4 className='font-burtons'>
+                Instrumentation
+                </h4>
+                <h4 className='font-burtons'>
+                Heat Transfer
+                </h4>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-                <Image src={code} width={100} height={100} className='mx-auto'/>
-                <h3 className='text-lg font-medium pt-8 pb-2 font-burtons'> Skills</h3>
-                <p className='font-burtons'>
-                C++, C, Python, JavaScript, HTML, CSS, Java, Keras, Tensorflow, Flask, SQLite, MongoDB
-                </p>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:w-1/3'>
+                <Image src={computer} width={100} height={100} className='mx-auto'/>
+                <h3 className='text-2xl font-medium pt-8 pb-2 font-burtons'>Computer Skills</h3>
+                <h4 className='font-burtons'>
+                C++
+                </h4>
+                <h4 className='font-burtons'>
+                C
+                </h4>
+                <h4 className='font-burtons'>
+                Python
+                </h4>
+                <h4 className='font-burtons'>
+                JavaScript
+                </h4>
+                <h4 className='font-burtons'>
+                Java
+                </h4>
+                <h4 className='font-burtons'>
+                HTML
+                </h4>
+                <h4 className='font-burtons'>
+                CSS
+                </h4>
+                <h4 className='font-burtons'>
+                Keras
+                </h4>
+                <h4 className='font-burtons'>
+                Tensorflow
+                </h4>
+                <h4 className='font-burtons'>
+                Flask
+                </h4>
+                <h4 className='font-burtons'>
+                SQLite
+                </h4>
+                <h4 className='font-burtons'>
+                MongoDB
+                </h4>
+                <h4 className='font-burtons'>
+                Postman
+                </h4>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-                <Image src={consulting} width={100} height={100} className='mx-auto'/>
-                <h3 className='text-lg font-medium pt-8 pb-2 font-burtons'> Interests</h3>
-                <p className='font-burtons text-center'>
-                Self-Driving Reinforcement Learning Models
-                </p>
-                <p className='font-burtons text-center'>
-                Full-Stack Development and engineering
-                </p>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:w-1/3'>
+                <Image src={gears} width={100} height={100} className='mx-auto'/>
+                <h3 className='text-2xl font-medium pt-8 pb-2 font-burtons'>Mechanical Skills</h3>
+                <h4 className='font-burtons'>
+                Solidworks
+                </h4> 
+                <h4 className='font-burtons'>
+                NX
+                </h4>
+                <h4 className='font-burtons'>
+                  AutoCAD
+                </h4> 
+                <h4 className='font-burtons'>
+                  Laser-cutter
+                </h4> 
+                <h4 className='font-burtons'>
+                 lathes
+                </h4> 
+                <h4 className='font-burtons'>
+                  mills
+                </h4>
+                <h4 className='font-burtons'>
+                  G-code
+                </h4> 
+                <h4 className='font-burtons'>
+                COMSOL Multiphysics
+                </h4>  
+                <h4 className='font-burtons'>
+                3D Printing - SLA & FDM
+                </h4> 
             </div>
           </div>
         </section>
