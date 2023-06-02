@@ -17,6 +17,7 @@ import gears from "../public/gears.png";
 import computer from "../public/computer.png";
 import me from "../public/me.png";
 import pencil from "../public/pencil.png";
+import main from "../public/main2.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -72,8 +73,8 @@ export default function Home() {
               <AiFillTwitterCircle style={{ color: iconColor }} />
               </a>
             </div>
-            <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96' style={{ zIndex: 1 }}>
-              <Image src={deved} style={{ objectFit: 'cover' }}/>
+            <div className='relative mx-auto bg-gradient-to-b from-purple-400 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96' style={{ zIndex: 1 }}>
+              <Image src={main} style={{ objectFit: 'cover' }}/>
             </div>
         </section>
 
@@ -123,6 +124,12 @@ export default function Home() {
                 </h4>
                 <h4 className='font-burtons'>
                 Instrumentation
+                </h4>
+                <h4 className='font-burtons'>
+                Statics
+                </h4>
+                <h4 className='font-burtons'>
+                Mechanics
                 </h4>
                 <h4 className='font-burtons'>
                 Heat Transfer

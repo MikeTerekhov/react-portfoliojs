@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useState, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import WorkPage from "../pages/WorkPage";
+import JobPage from "@/pages/JobPage";
 
 function Navbar() {
   const navRef = useRef();
@@ -22,6 +23,7 @@ function Navbar() {
       <nav ref={navRef} className={isNavOpen ? "responsive_nav" : ""}>
         <Link href="/">Home</Link>
         <Link href="/WorkPage">Projects</Link>
+        <Link href="/JobPage">Work Experience</Link>
         <button className="nav-btn nav-close-btn" onClick={closeNavbar}>
           <FaTimes />
         </button>
