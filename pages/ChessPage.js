@@ -15,6 +15,10 @@ import kart2 from "../public/racekart2.png";
 import goose from "../public/goose.png";
 import chess2 from "../public/chess2.png";
 
+import home_screen2 from "../public/home_screen2.png";
+import mid_game from "../public/mid_game.png";
+import game_over from "../public/game_over.png";
+
 function ChessPage() {
   const [darkMode, setDarkMode] = useState(false);
   const iconColor = darkMode ? 'white' : 'black';
@@ -69,6 +73,21 @@ function ChessPage() {
                 <p className='font-burtons text-xl'>
                 Worked on a group that created a chess app in Android Studio with fully functioning chess logic, user vs user gameplay, as well as user vs AI gameplay.
                 </p>
+
+
+                <div className='lg:flex gap-10'>
+                  <div style={{ padding: '20px' }}>
+                  <Image src={home_screen2} width={750} height={750} className='mx-auto'/>
+                  </div>
+                  <div style={{ padding: '20px' }}>
+                  <Image src={mid_game} width={750} height={750} className='mx-auto'/>
+                  </div>
+                  <div style={{ padding: '20px' }}>
+                  <Image src={game_over} width={750} height={750} className='mx-auto'/>
+                  </div>
+                </div>
+
+
                 <h3 className='text-4xl font-medium pt-8 pb-2 font-burtons text-left'> Basic Requirements Satisfied:</h3>
                 <p className='font-burtons text-xl text-left'>
                 - Local device user vs user gameplay

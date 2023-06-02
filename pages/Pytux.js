@@ -64,6 +64,19 @@ function Pytux() {
                 <div style={{ padding: '20px' }}>
                 <h3 className='text-4xl font-medium pt-8 pb-2 font-burtons text-left'> Altering dataset size and training epochs for CNN:</h3>
                 <Image src={overfit} width={1500} height={1500} className='mx-auto'/>
+
+                <ul style={{ margin: 10, padding: 10, listStyle: 'none' }}>
+                <li style={{ display: 'flex', justifyContent: 'center' }}>
+                <a
+                className='bg-gradient-to-r from-cyan-500 to-violet-400 text-white px-4 py-2 rounded-md ml-8'
+                href = "https://drive.google.com/file/d/1Yd7r4jR27ioRO0kLbZk7G-SW1CmxW_zd/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                > Video of Overfitting
+                </a>
+                </li>
+                </ul>
+
                 <p className='font-burtons text-left text-xl'>
                 - Here it is shown how our CNN is overfitting and thinks that the road is to the right of the screen below the bridge, but actually the road continues straight ahead
                 </p>

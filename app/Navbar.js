@@ -17,7 +17,7 @@ function Navbar() {
   };
 
   return (
-    <header>
+    <header className='bg-gradient-to-r from-cyan-500 to-violet-400 text-white px-4 py-2'>
       <h3>Mike Terekhov</h3>
       <nav ref={navRef} className={isNavOpen ? "responsive_nav" : ""}>
         <Link href="/">Home</Link>

@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 @font-face {
     font-family: "burtons";
     src: url("../public/Burtons.otf");
@@ -9,6 +13,8 @@
 	box-sizing: border-box;
 	font-family: burtons;
 }
+
+
 
 :root {
 	--mainColor: #a27fde;
@@ -73,12 +79,14 @@ nav {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color: var(--mainColor);
+		background-color: linear-gradient(to right, from-cyan-500, to-violet-400);
 		transition: 1s;
 	}
 
 	header .responsive_nav {
 		transform: translateY(100vh);
+		background-color: var(--mainColor);
+		color: linear-gradient(to right, from-cyan-500, to-violet-400);
 	}
 
 	nav .nav-close-btn {
