@@ -21,6 +21,10 @@ import main from "../public/main2.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
+  // Save the darkMode value to local storage
+  localStorage.setItem('darkMode', darkMode);
+  
   const iconColor = darkMode ? 'white' : 'black';
   return (
     <>
@@ -45,7 +49,7 @@ export default function Home() {
                 </li>
                 <li><a
                 className='bg-gradient-to-r from-cyan-500 to-violet-400 text-white px-4 py-2 rounded-md ml-8'
-                href = "https://drive.google.com/file/d/1kTqMSNQEF80Q5FdJ91tSxPpc0_vhYlWw/view?usp=share_link"
+                href = "https://drive.google.com/file/d/15jvjgFaeiSThf0n7j9uRtHnNb3-QePo2/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Resume</a></li>
