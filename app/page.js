@@ -22,9 +22,13 @@ import main from "../public/main2.png";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
-  // Save the darkMode value to local storage
-  localStorage.setItem('darkMode', darkMode);
-  
+
+  if (typeof window !== 'undefined') {
+    // Perform localStorage action
+    // Save the darkMode value to local storage
+    localStorage.setItem('darkMode', darkMode);
+  }
+
   const iconColor = darkMode ? 'white' : 'black';
   return (
     <>
