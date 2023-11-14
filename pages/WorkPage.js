@@ -69,6 +69,14 @@ function WorkPage() {
             </Link>
                 <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Autonomous Goose-Chaser</h3>
             </div>
+
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <Link href="/GoosePage">
+                <Image src={goose} width={200} height={200} className='mx-auto' />
+            </Link>
+                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Autonomous Goose-Chaser</h3>
+            </div>
+
           </div>
           <div className='py-4 h-20'></div>
       </div>
