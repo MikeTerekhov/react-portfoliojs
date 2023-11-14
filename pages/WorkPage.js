@@ -1,11 +1,5 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai';
-import deved from "../public/dev-ed-wave.png";
-import design from "../public/design.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
 import { useState } from "react";
 import Navbar from '@/app/Navbar';
 import '@/app/workPage.css';
@@ -14,11 +8,8 @@ import paper from "../public/paper.jpg";
 import kart2 from "../public/racekart2.png";
 import goose from "../public/goose.png";
 import chess2 from "../public/chess2.png";
-import Pytux from './Pytux';
-import chess_page from './ChessPage';
-import doc_read from './DocRead';
-import goose_page from './GoosePage';
 import Link from 'next/link';
+import memory from "../public/memory.png";
 
 function WorkPage() {
   const [darkMode, setDarkMode] = useState(false);
@@ -71,10 +62,10 @@ function WorkPage() {
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-            <Link href="/GoosePage">
-                <Image src={goose} width={200} height={200} className='mx-auto' />
+            <Link href="/MemoryGame">
+                <Image src={memory} width={200} height={200} className='mx-auto' />
             </Link>
-                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Autonomous Goose-Chaser</h3>
+                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Swift Emoji Memory Card Game </h3>
             </div>
 
           </div>
