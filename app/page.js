@@ -60,7 +60,7 @@ export default function Home() {
               </ul>
             </nav>
             <div className='text-center p-10'>
-              <h2 className='text-5xl py-2 text-violet-400 font-medium font-burtons md:text-6xl'> Mike Terekhovvvvvvvvvvvv </h2>
+              <h2 className='text-5xl py-2 text-violet-400 font-medium font-burtons md:text-6xl'> Mike Terekhovvvvvvvvvvvvvvvvvvv </h2>
               <h3 className='text-2xl py-2 md:text-3xl dark:text-white font-burtons'>AI/ML & Software Engineer</h3>
               <p className='text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-white font-burtons'>Recent college graduate from Boston University with a B.S. in mechanical engineering with a concentration in machine learning and currently pursuing a M.S. in computer science at the University of Southern California</p>
             </div>
