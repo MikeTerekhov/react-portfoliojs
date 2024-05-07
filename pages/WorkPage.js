@@ -68,6 +68,13 @@ function WorkPage() {
                 <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Swift Emoji Memory Card Game </h3>
             </div>
 
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <Link href="/TraderIOS">
+                <Image src={memory} width={200} height={200} className='mx-auto' />
+            </Link>
+                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Stock Trader IOS </h3>
+            </div>
+
           </div>
           <div className='py-4 h-20'></div>
       </div>

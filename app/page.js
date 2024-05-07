@@ -71,14 +71,8 @@ export default function Home() {
               <a href="https://github.com/MikeTerekhov" target="_blank" rel="noopener noreferrer">
                 <FaGithub style={{ color: iconColor }} />
               </a>
-              <a href="https://www.instagram.com/miketerekhov/" target="_blank" rel="noopener noreferrer">
-                <FaInstagram style={{ color: iconColor }} />
-              </a>
               <a href="https://www.strava.com/athletes/27456281" target="_blank" rel="noopener noreferrer">
                 <FaStrava style={{ color: iconColor }} />
-              </a>
-              <a href="https://twitter.com/MikeTerekhov" target="_blank" rel="noopener noreferrer">
-              <AiFillTwitterCircle style={{ color: iconColor }} />
               </a>
             </div>
             <div className='relative mx-auto bg-gradient-to-b from-purple-400 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96' style={{ zIndex: 1 }}>
