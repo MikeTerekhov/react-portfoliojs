@@ -40,7 +40,7 @@ function TraderIOS() {
                                 alignItems: 'center',
                                 height: '100vh' // Adjust or remove to fit the entire viewport or parent
                             }}>
-                            <video width="700" height="500" controls>
+                            <video width="700" height="600" controls>
                                 <source src="/vid.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
