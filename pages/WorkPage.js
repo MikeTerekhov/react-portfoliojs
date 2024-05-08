@@ -10,6 +10,7 @@ import goose from "../public/goose.png";
 import chess2 from "../public/chess2.png";
 import Link from 'next/link';
 import memory from "../public/memory.png";
+import stocks from "../public/stocks.png";
 
 function WorkPage() {
   const [darkMode, setDarkMode] = useState(false);
@@ -36,6 +37,14 @@ function WorkPage() {
             <h3 className = "text-5xl py-1 dark:text-white font-burtons text-center">Projects</h3>
           </div>
           <div className='gap-10'>
+
+          <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <Link href="/TraderIOS">
+                <Image src={stocks} width={200} height={200} className='mx-auto' />
+            </Link>
+                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Stock Trader IOS </h3>
+            </div>
+
           <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
             <Link href="/ChessPage">
                 <Image src={chess2} width={200} height={200} className='mx-auto' />
@@ -67,14 +76,6 @@ function WorkPage() {
             </Link>
                 <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Swift Emoji Memory Card Game </h3>
             </div>
-
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-            <Link href="/TraderIOS">
-                <Image src={memory} width={200} height={200} className='mx-auto' />
-            </Link>
-                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Stock Trader IOS </h3>
-            </div>
-
           </div>
           <div className='py-4 h-20'></div>
       </div>

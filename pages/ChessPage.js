@@ -54,7 +54,7 @@ function ChessPage() {
                 </a>
                 </li>
 
-                <li style={{ display: 'flex', justifyContent: 'center', margin: 20 }}>
+                {/* <li style={{ display: 'flex', justifyContent: 'center', margin: 20 }}>
                 <a
                 className='bg-gradient-to-r from-cyan-500 to-violet-400 text-white px-4 py-2 rounded-md ml-8'
                 href = "https://drive.google.com/file/d/1azJUkuiKh-R_SPTCkGS0RP66cnYv5kCU/view?usp=sharing"
@@ -62,10 +62,25 @@ function ChessPage() {
                 rel="noopener noreferrer"
                 >Demo Video
                 </a>
-                </li>
+                </li> */}
                 </ul>
 
           </div>
+
+          <div style={{ textAlign: 'center' }} className = "text-7xl py-1 dark:text-white font-burtons">
+          <div style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                                height: '100vh' // Adjust or remove to fit the entire viewport or parent
+                            }}>
+                            <video width="400" height="400" controls>
+                                <source src="/chessmp4.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                            </div>
+          </div>
+
           <div className='gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
                 <Image src={chess2} width={400} height={400} className='mx-auto'/>
