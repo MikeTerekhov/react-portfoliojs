@@ -43,6 +43,8 @@ export default function Home() {
             <nav className='py-10 mb-12 flex justify-between'>
               <h1 className='text-xl font-burtons dark:text-white'>
                 Mike Terekhovvvv
+                the goat
+                test again
               </h1>
               <ul className='flex items-center'>
                 <li>
