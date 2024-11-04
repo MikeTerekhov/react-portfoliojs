@@ -42,7 +42,7 @@ export default function Home() {
         <section className='min-h-screen'>
             <nav className='py-10 mb-12 flex justify-between'>
               <h1 className='text-xl font-burtons dark:text-white'>
-                Mike Terekhov
+                Mike Terekhovvvv
               </h1>
               <ul className='flex items-center'>
                 <li>
