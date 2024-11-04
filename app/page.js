@@ -42,9 +42,7 @@ export default function Home() {
         <section className='min-h-screen'>
             <nav className='py-10 mb-12 flex justify-between'>
               <h1 className='text-xl font-burtons dark:text-white'>
-                Mike Terekhovvvv
-                the goat
-                test again
+                Mike Terekhov
               </h1>
               <ul className='flex items-center'>
                 <li>
@@ -55,7 +53,7 @@ export default function Home() {
                 </li>
                 <li><a
                 className='bg-gradient-to-r from-cyan-500 to-violet-400 text-white px-4 py-2 rounded-md ml-8'
-                href = "https://drive.google.com/file/d/1AXYcifkK16S6KKZo00FMviqH-Eqypmeb/view?usp=sharing"
+                href = "https://drive.google.com/file/d/1mxrRKMCGB85We-VsRQczcejRTEE42y2H/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Resume</a></li>
@@ -63,7 +61,7 @@ export default function Home() {
             </nav>
             <div className='text-center p-10'>
               <h2 className='text-5xl py-2 text-violet-400 font-medium font-burtons md:text-6xl'> Mike Terekhov </h2>
-              <h3 className='text-2xl py-2 md:text-3xl dark:text-white font-burtons'>AI/ML & Software Engineer</h3>
+              <h3 className='text-2xl py-2 md:text-3xl dark:text-white font-burtons'>MS CS @ University of Southern California</h3>
               <p className='text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-white font-burtons'>Recent college graduate from Boston University with a B.S. in mechanical engineering with a concentration in machine learning and currently pursuing a M.S. in computer science at the University of Southern California</p>
             </div>
             <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
