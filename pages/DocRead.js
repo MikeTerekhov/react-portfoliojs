@@ -23,9 +23,22 @@ import nlp_screen from "../public/nlp_screen.png";
 import sentiment from "../public/sentiment.png";
 import document_list_page from "../public/document_list_page.png";
 import doc_screen from "../public/doc_screen.png";
+import {useEffect } from 'react';
 
 function DocRead() {
   const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check localStorage for dark mode preference when component mounts
+    const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+    setDarkMode(savedDarkMode);
+  }, []);
+
+  // Update localStorage whenever darkMode changes
+  useEffect(() => {
+    localStorage.setItem('darkMode', darkMode);
+  }, [darkMode]);
+
   const iconColor = darkMode ? 'white' : 'black';
   return (
     <>

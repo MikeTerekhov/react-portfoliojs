@@ -28,9 +28,22 @@ import pic_example from "../public/pic_example.png";
 import differences from "../public/differences.png"
 import toy_example from "../public/toy_example.png";
 import drone from "../public/drone.png";
+import {useEffect } from 'react';
 
 function GoosePage() {
   const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check localStorage for dark mode preference when component mounts
+    const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+    setDarkMode(savedDarkMode);
+  }, []);
+
+  // Update localStorage whenever darkMode changes
+  useEffect(() => {
+    localStorage.setItem('darkMode', darkMode);
+  }, [darkMode]);
+
   const iconColor = darkMode ? 'white' : 'black';
   return (
     <>

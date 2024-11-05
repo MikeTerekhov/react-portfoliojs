@@ -25,9 +25,22 @@ import linresults from "../public/linresult.png";
 import lintracks from "../public/lintracks.png";
 import doubleQalg from "../public/doubleQalg.png";
 import eqns from "../public/eqns.png";
+import {useEffect } from 'react';
 
 function Pytux() {
   const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check localStorage for dark mode preference when component mounts
+    const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+    setDarkMode(savedDarkMode);
+  }, []);
+
+  // Update localStorage whenever darkMode changes
+  useEffect(() => {
+    localStorage.setItem('darkMode', darkMode);
+  }, [darkMode]);
+
   const iconColor = darkMode ? 'white' : 'black';
   return (
     <>

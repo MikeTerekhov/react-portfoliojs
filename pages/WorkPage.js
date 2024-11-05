@@ -11,9 +11,22 @@ import chess2 from "../public/chess2.png";
 import Link from 'next/link';
 import memory from "../public/memory.png";
 import stocks from "../public/stocks.png";
+import {useEffect } from 'react';
 
 function WorkPage() {
   const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check localStorage for dark mode preference when component mounts
+    const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+    setDarkMode(savedDarkMode);
+  }, []);
+
+  // Update localStorage whenever darkMode changes
+  useEffect(() => {
+    localStorage.setItem('darkMode', darkMode);
+  }, [darkMode]);
+
   const iconColor = darkMode ? 'white' : 'black';
   return (
     <>

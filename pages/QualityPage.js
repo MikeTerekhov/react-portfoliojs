@@ -7,6 +7,7 @@ import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
 import { useState } from "react";
+import { useEffect } from 'react';
 import Navbar from '@/app/Navbar';
 import '@/app/workPage.css';
 import kart from "../public/racekart.png";
@@ -25,8 +26,20 @@ import ge2 from "../public/ge2.png";
 import ge3 from "../public/ge3.png";
 
 function QualityPage() {
-  const [darkMode, setDarkMode] = useState(false);
-  const iconColor = darkMode ? 'white' : 'black';
+    const [darkMode, setDarkMode] = useState(false);
+
+    useEffect(() => {
+      // Check localStorage for dark mode preference when component mounts
+      const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+      setDarkMode(savedDarkMode);
+    }, []);
+  
+    // Update localStorage whenever darkMode changes
+    useEffect(() => {
+      localStorage.setItem('darkMode', darkMode);
+    }, [darkMode]);
+  
+    const iconColor = darkMode ? 'white' : 'black';
   return (
     <>
     <Navbar/>

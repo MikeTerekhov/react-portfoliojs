@@ -12,9 +12,22 @@ import start from "../public/emoji/start.png";
 import initial from "../public/emoji/initial.png";
 import not from "../public/emoji/not.png";
 import correct from "../public/emoji/correct.png";
+import {useEffect } from 'react';
 
 function MemoryGame() {
   const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check localStorage for dark mode preference when component mounts
+    const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+    setDarkMode(savedDarkMode);
+  }, []);
+
+  // Update localStorage whenever darkMode changes
+  useEffect(() => {
+    localStorage.setItem('darkMode', darkMode);
+  }, [darkMode]);
+
   const iconColor = darkMode ? 'white' : 'black';
   return (
     <>

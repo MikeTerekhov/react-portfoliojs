@@ -18,9 +18,22 @@ import chess2 from "../public/chess2.png";
 import home_screen2 from "../public/home_screen2.png";
 import mid_game from "../public/mid_game.png";
 import game_over from "../public/game_over.png";
+import {useEffect } from 'react';
 
 function ChessPage() {
   const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check localStorage for dark mode preference when component mounts
+    const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+    setDarkMode(savedDarkMode);
+  }, []);
+
+  // Update localStorage whenever darkMode changes
+  useEffect(() => {
+    localStorage.setItem('darkMode', darkMode);
+  }, [darkMode]);
+
   const iconColor = darkMode ? 'white' : 'black';
   return (
     <>

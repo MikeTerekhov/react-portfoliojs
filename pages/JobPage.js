@@ -14,12 +14,25 @@ import chess_page from './ChessPage';
 import doc_read from './DocRead';
 import goose_page from './GoosePage';
 import Link from 'next/link';
+import {useEffect } from 'react';
 
 import plane from "../public/plane2.png";
 
 
 function JobPage() {
   const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check localStorage for dark mode preference when component mounts
+    const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+    setDarkMode(savedDarkMode);
+  }, []);
+
+  // Update localStorage whenever darkMode changes
+  useEffect(() => {
+    localStorage.setItem('darkMode', darkMode);
+  }, [darkMode]);
+
   const iconColor = darkMode ? 'white' : 'black';
   return (
     <>
