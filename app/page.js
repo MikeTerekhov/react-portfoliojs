@@ -22,12 +22,16 @@ import main from "../public/main2.png";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
+  useEffect(() => {
+    // Check localStorage for dark mode preference when component mounts
+    const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+    setDarkMode(savedDarkMode);
+  }, []);
 
-  if (typeof window !== 'undefined') {
-    // Perform localStorage action
-    // Save the darkMode value to local storage
+  // Update localStorage whenever darkMode changes
+  useEffect(() => {
     localStorage.setItem('darkMode', darkMode);
-  }
+  }, [darkMode]);
 
   const iconColor = darkMode ? 'white' : 'black';
   return (
