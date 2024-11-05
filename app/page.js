@@ -43,7 +43,7 @@ export default function Home() {
         <title>Mike Terekhov</title>
       </Head>
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'> 
-        <section className='min-h-screen'>
+        
             <nav className='py-10 mb-12 flex justify-between'>
               <h1 className='text-xl font-burtons dark:text-white'>
                 Mike Terekhov
@@ -79,12 +79,12 @@ export default function Home() {
                 <FaStrava style={{ color: iconColor }} />
               </a>
             </div>
-            <div className='relative mx-auto bg-gradient-to-b from-purple-400 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96' style={{ zIndex: 1 }}>
+            {/* <div className='relative mx-auto bg-gradient-to-b from-purple-400 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96' style={{ zIndex: 1 }}>
               <Image src={main} style={{ objectFit: 'cover' }}/>
-            </div>
-        </section>
+            </div> */}
+        
 
-        <section>
+        
           <div>           
             <h3 className = "text-3xl py-1 dark:text-white font-burtons">My Background</h3>
           </div>
@@ -216,7 +216,7 @@ export default function Home() {
                 </h4> 
             </div>
           </div>
-        </section>
+        
       </main>
     </div>
     </>
