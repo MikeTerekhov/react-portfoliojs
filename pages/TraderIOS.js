@@ -45,7 +45,7 @@ function TraderIOS() {
         </section>
 
           <div>           
-            <h3 style={{ textAlign: 'center' }} className = "text-7xl py-1 dark:text-white font-burtons">Stock Trader IOS</h3>
+            <h3 style={{ textAlign: 'center' }} className = "text-7xl py-1 dark:text-white font-droidMono">Stock Trader IOS</h3>
           </div>
                             <div style={{
                                 display: 'flex',

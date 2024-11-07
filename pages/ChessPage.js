@@ -54,7 +54,7 @@ function ChessPage() {
             </nav>
         </section>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>           
-            <h3 style={{ textAlign: 'center' }} className = "text-7xl py-1 dark:text-white font-burtons">Android Chess Application</h3>
+            <h3 style={{ textAlign: 'center' }} className = "text-7xl py-1 dark:text-white font-droidMono">Android Chess Application</h3>
 
             <ul style={{ margin: 10, padding: 10, listStyle: 'none' }}>
                 <li style={{ display: 'flex', justifyContent: 'center' }}>
@@ -97,8 +97,8 @@ function ChessPage() {
           <div className='gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
                 <Image src={chess2} width={400} height={400} className='mx-auto'/>
-                <h3 className='text-4xl font-medium pt-8 pb-2 font-burtons text-left'> Objective & Background:</h3>
-                <p className='font-burtons text-xl'>
+                <h3 className='text-4xl font-medium pt-8 pb-2 font-droidMono text-left'> Objective & Background:</h3>
+                <p className='font-droidMono text-xl'>
                 Worked on a group that created a chess app in Android Studio with fully functioning chess logic, user vs user gameplay, as well as user vs AI gameplay.
                 </p>
 
@@ -116,55 +116,55 @@ function ChessPage() {
                 </div>
 
 
-                <h3 className='text-4xl font-medium pt-8 pb-2 font-burtons text-left'> Basic Requirements Satisfied:</h3>
-                <p className='font-burtons text-xl text-left'>
+                <h3 className='text-4xl font-medium pt-8 pb-2 font-droidMono text-left'> Basic Requirements Satisfied:</h3>
+                <p className='font-droidMono text-xl text-left'>
                 - Local device user vs user gameplay
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                 - Local device user vs computer gameplay
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                 - Chess pieces follow traditional movement rules
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                 - Game recognizes whose turn it is
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                 - Game recognizes when a checkmate or stalemate is reached
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                 - Game prompts user to keep playing, quit playing, or change modes upon game ending
                 </p>
-                <h3 className='text-4xl font-medium pt-8 pb-2 font-burtons text-left'> Implementation:</h3>
-                <p className='font-burtons text-xl text-left'>
+                <h3 className='text-4xl font-medium pt-8 pb-2 font-droidMono text-left'> Implementation:</h3>
+                <p className='font-droidMono text-xl text-left'>
                 - Created class called Piece, which has several subclasses : Rook, Queen, etc
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                 - In main activity, creates 8x8 matrix of Pieces, as well as two 8x8 matrices of TextViews, layered on top of each other, one for background tiles and one for pieces
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                 - Logic is done on the Piece matrix, and then reflected on the TextView matrices
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                 - Each click program checks whose turn, whether a win has happened, or whether the king is in check
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                 - Bot can be supplemented after each player turn if mode is set to Bot
                 </p>
-                <h3 className='text-4xl font-medium pt-8 pb-2 font-burtons text-left'> Additional Features:</h3>
-                <p className='font-burtons text-xl text-left'>
+                <h3 className='text-4xl font-medium pt-8 pb-2 font-droidMono text-left'> Additional Features:</h3>
+                <p className='font-droidMono text-xl text-left'>
                 - Predictive move feature - ability to see possible moves
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                 - Sound effects/animation
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                 - Customizable UI - pieces, board colors, etc
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                 - Leaderboard ranking system
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                 - Different levels of bot strength/playing types
                 </p>
             </div>

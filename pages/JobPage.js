@@ -53,15 +53,15 @@ function JobPage() {
             </nav>
         </section>
           <div>           
-            <h3 className = "text-5xl py-1 dark:text-white font-burtons text-center">Work Experience</h3>
+            <h3 className = "text-5xl py-1 dark:text-white font-droidMono text-center">Work Experience</h3>
           </div>
           <div className='gap-10'>
           <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
             <Link href="/QualityPage">
-                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> GE Aerospace </h3>
+                <h3 className='text-xl font-medium pt-8 pb-2 font-droidMono'> GE Aerospace </h3>
                 <Image src={plane} width={400} height={400} className='mx-auto' />
             </Link>
-                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Quality Engineering Intern</h3>
+                <h3 className='text-xl font-medium pt-8 pb-2 font-droidMono'> Quality Engineering Intern</h3>
             </div>
           </div>
           <div className='py-4 h-20'></div>

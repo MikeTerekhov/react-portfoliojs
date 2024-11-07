@@ -47,7 +47,7 @@ function WorkPage() {
             </nav>
         </section>
           <div>           
-            <h3 className = "text-5xl py-1 dark:text-white font-burtons text-center">Projects</h3>
+            <h3 className = "text-5xl py-1 dark:text-white font-droidMono text-center">Projects</h3>
           </div>
           <div className='gap-10'>
 
@@ -55,39 +55,39 @@ function WorkPage() {
             <Link href="/TraderIOS">
                 <Image src={stocks} width={200} height={200} className='mx-auto' />
             </Link>
-                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Stock Trader IOS </h3>
+                <h3 className='text-xl font-medium pt-8 pb-2 font-droidMono'> Stock Trader IOS </h3>
             </div>
 
           <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
             <Link href="/ChessPage">
                 <Image src={chess2} width={200} height={200} className='mx-auto' />
             </Link>
-                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Android Chess App</h3>
+                <h3 className='text-xl font-medium pt-8 pb-2 font-droidMono'> Android Chess App</h3>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
             <Link href="/Pytux">
                 <Image src={kart2} width={200} height={200} className='mx-auto' />
             </Link>
-                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Self-Driving Kart</h3>
+                <h3 className='text-xl font-medium pt-8 pb-2 font-droidMono'> Self-Driving Kart</h3>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
             <Link href="/DocRead">
                 <Image src={paper} width={200} height={200} className='mx-auto' />
             </Link>
-                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Smart PDF Analyzer</h3>
+                <h3 className='text-xl font-medium pt-8 pb-2 font-droidMono'> Smart PDF Analyzer</h3>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
             <Link href="/GoosePage">
                 <Image src={goose} width={200} height={200} className='mx-auto' />
             </Link>
-                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Autonomous Goose-Chaser</h3>
+                <h3 className='text-xl font-medium pt-8 pb-2 font-droidMono'> Autonomous Goose-Chaser</h3>
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
             <Link href="/MemoryGame">
                 <Image src={memory} width={200} height={200} className='mx-auto' />
             </Link>
-                <h3 className='text-xl font-medium pt-8 pb-2 font-burtons'> Swift Emoji Memory Card Game </h3>
+                <h3 className='text-xl font-medium pt-8 pb-2 font-droidMono'> Swift Emoji Memory Card Game </h3>
             </div>
           </div>
           <div className='py-4 h-20'></div>

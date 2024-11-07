@@ -59,80 +59,80 @@ function QualityPage() {
             </nav>
         </section>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>           
-            <h3 style={{ textAlign: 'center' }} className = "text-7xl py-1 dark:text-white font-burtons">Quality Engineering Internship</h3>
+            <h3 style={{ textAlign: 'center' }} className = "text-7xl py-1 dark:text-white font-droidMono">Quality Engineering Internship</h3>
 
           </div>
           <div className='gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
                 <Image src={plane} width={400} height={400} className='mx-auto'/>
 
-                <h3 className='text-4xl font-medium pt-8 pb-2 font-burtons text-left'> Objective & Background:</h3>
-                <p className='font-burtons text-xl'>
+                <h3 className='text-4xl font-medium pt-8 pb-2 font-droidMono text-left'> Objective & Background:</h3>
+                <p className='font-droidMono text-xl'>
                 Interned at GE Aviation manufacturing plant in Hooksett New Hampshire. I worked as a part of the quality engineering team in the Blisk department.
                 </p>
 
-                <h3 className='text-4xl font-medium pt-8 pb-2 font-burtons text-left'> Roles & Responsibilities:</h3>
+                <h3 className='text-4xl font-medium pt-8 pb-2 font-droidMono text-left'> Roles & Responsibilities:</h3>
 
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Worked with operators in the shop in observing and inspecting defected parts and performing root cause analysis
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Worked with manufacturing and design engineering teams in conducting priority part reviews where all teams would work together and fully inspect the manufacturing of a certain part
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Participated in shop-walks where inspections of all stages of the manufacturing process would occur
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Assisted in conducting monthly inventory and kept track of parts and their respective defects
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Participated in daily engineering team meeting where daily events and priorities would be discussed
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Analyzed part drawings utilizing GD & T principles
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Participated in LEAN manufacturing meetings where shop efficiency and workflow was analyzed and potential improvements would be suggested to improve efficiency and decrease costs
                 </p>
 
-                <h3 className='text-4xl font-medium pt-8 pb-2 font-burtons text-left'> Accomplishments:</h3>
+                <h3 className='text-4xl font-medium pt-8 pb-2 font-droidMono text-left'> Accomplishments:</h3>
 
-                <p className='font-burtons text-2xl text-center'>
+                <p className='font-droidMono text-2xl text-center'>
                     Digitized Part Heat-Map
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Designed and developed a heat map that would allow the operators at different stages of the manufacturing process to highlight the location and type of defect
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Wrote Python code to digitize this project and allow the data to be stored in an Excel sheet so that overtime the defects and their respective locations can be tracked
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Designed this in such a way so that it can be utilized for any part 
                 </p>
 
-                <p className='font-burtons text-2xl text-center pt-8'>
+                <p className='font-droidMono text-2xl text-center pt-8'>
                     NX
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Learned how to use NX CAD software
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Learned how to import existing parts and perform many different types of analysis on the part
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Participated in designing new parts and altering existing part designs to improve them
                 </p>
 
-                <p className='font-burtons text-2xl text-center pt-8'>
+                <p className='font-droidMono text-2xl text-center pt-8'>
                     Customer Returns
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Designed and implemented a section of the plant that would contain all of the customer returns in an organized manner
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Analyzed patterns in whcih parts would be returned and why and then used this data to perform root cause analysis
                 </p>
-                <p className='font-burtons text-xl text-left'>
+                <p className='font-droidMono text-xl text-left'>
                     - Built the area in the plant and organized all of the existing returns
                 </p>
 

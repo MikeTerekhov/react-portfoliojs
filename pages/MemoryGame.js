@@ -48,31 +48,31 @@ function MemoryGame() {
             </nav>
         </section>
           <div>           
-            <h3 style={{ textAlign: 'center' }} className = "text-7xl py-1 dark:text-white font-burtons">Swift Emoji Memory Card Game</h3>
+            <h3 style={{ textAlign: 'center' }} className = "text-7xl py-1 dark:text-white font-droidMono">Swift Emoji Memory Card Game</h3>
           </div>
           <div className='gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
                 <Image src={memory} width={400} height={400} className='mx-auto'/>
                 
-                <h3 className='text-4xl font-medium pt-8 pb-2 font-burtons text-left'> Objective & Background:</h3>
-                <h1 className='font-burtons text-xl text-left'>
+                <h3 className='text-4xl font-medium pt-8 pb-2 font-droidMono text-left'> Objective & Background:</h3>
+                <h1 className='font-droidMono text-xl text-left'>
                 - Created a game in Swift using Xcode that allows user to flip over cards and attempt to guess cards with matching emojis.
                 </h1>
 
-                <h1 className='font-burtons text-xl text-left'>
+                <h1 className='font-droidMono text-xl text-left'>
                 - Watched and followed along Stanford online course on IOS development where this was the project
                 </h1>
 
-                <h1 className='font-burtons text-xl text-left'>
+                <h1 className='font-droidMono text-xl text-left'>
                 - Utilized Model-View-ViewModel MVVM architecture when developing the application
                 </h1>
-                <h1 className='font-burtons text-xl text-left'>
+                <h1 className='font-droidMono text-xl text-left'>
                 - Separated functionality into seperate modules for more organized code
                 </h1>
-                <h1 className='font-burtons text-xl text-left'>
+                <h1 className='font-droidMono text-xl text-left'>
                 - Experimented with varying animation techniques and custom shape drawing
                 </h1>
-                <h1 className='font-burtons text-xl text-left'>
+                <h1 className='font-droidMono text-xl text-left'>
                 - Working on utilizing CoreData to keep track of games and profiles that play the game
                 </h1>
                 

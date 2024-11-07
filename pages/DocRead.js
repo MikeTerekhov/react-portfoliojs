@@ -59,111 +59,111 @@ function DocRead() {
             </nav>
         </section>
           <div>           
-            <h3 style={{ textAlign: 'center' }} className = "text-7xl py-1 dark:text-white font-burtons">PDF Analyzer</h3>
+            <h3 style={{ textAlign: 'center' }} className = "text-7xl py-1 dark:text-white font-droidMono">PDF Analyzer</h3>
           </div>
           <div className='gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
                 <Image src={paper} width={400} height={400} className='mx-auto'/>
-                <h3 className='text-4xl font-medium pt-8 pb-2 font-burtons text-left'> Objective & Background:</h3>
-                <p className='font-burtons text-xl'>
+                <h3 className='text-4xl font-medium pt-8 pb-2 font-droidMono text-left'> Objective & Background:</h3>
+                <p className='font-droidMono text-xl'>
                 Full-stack application that allows user to upload PDFs and have them digitally analyzed. Used Python Flask for API implementation. Used MongoDB for backend storage of documents and their respective information.
                 </p>
-                <h3 className='text-4xl font-medium pt-8 pb-2 font-burtons text-left'> APIs:</h3>
-                <p className='font-burtons text-xl'>
+                <h3 className='text-4xl font-medium pt-8 pb-2 font-droidMono text-left'> APIs:</h3>
+                <p className='font-droidMono text-xl'>
                 Built seperate APIs to upload a PDF File, obtain sentiment of file, incorporate file-scraping features, and utilized OpenAI ChatGPT API.
                 </p>
                 <div style={{ padding: '20px' }}>
-                    <p className='font-burtons text-left text-2xl'>
+                    <p className='font-droidMono text-left text-2xl'>
                     Upload: 
                     </p>
-                    <p className='font-burtons text-left text-xl'>
+                    <p className='font-droidMono text-left text-xl'>
                     - upload a PDF and checks the correct input file type using Pytest unit tests
                     </p>
-                    <p className='font-burtons text-left text-xl'>
+                    <p className='font-droidMono text-left text-xl'>
                     - saving to Mongo DB happens in here as well
                     </p>
-                    <p className='font-burtons text-left text-xl'>
+                    <p className='font-droidMono text-left text-xl'>
                     - uses allowed_file fucntion to check file format
                     </p>
                 </div>
 
                 <div style={{ padding: '20px' }}>
-                    <p className='font-burtons text-left text-2xl'>
+                    <p className='font-droidMono text-left text-2xl'>
                     Extract Text: 
                     </p>
-                    <p className='font-burtons text-left text-xl'>
+                    <p className='font-droidMono text-left text-xl'>
                     - scrapes the PDF and extracts all containing text and returns it
                     </p>
                 </div>
 
                 <div style={{ padding: '20px' }}>
-                    <p className='font-burtons text-left text-2xl'>
+                    <p className='font-droidMono text-left text-2xl'>
                     Get Summary: 
                     </p>
-                    <p className='font-burtons text-left text-xl'>
+                    <p className='font-droidMono text-left text-xl'>
                     - utilizes OpenAI API to prompt the model to summarize the text of the respective document
                     </p>
-                    <p className='font-burtons text-left text-xl'>
+                    <p className='font-droidMono text-left text-xl'>
                     - CREDIT CARD must be added to OpenAI account to make it functional - OpenAI bug
                     </p>
-                    <p className='font-burtons text-left text-xl'>
+                    <p className='font-droidMono text-left text-xl'>
                     - cuts down summary to three sentances - easily changed 
                     </p>
                 </div>
 
                 <div style={{ padding: '20px' }}>
-                    <p className='font-burtons text-left text-2xl'>
+                    <p className='font-droidMono text-left text-2xl'>
                     Get Sentiment: 
                     </p>
-                    <p className='font-burtons text-left text-xl'>
+                    <p className='font-droidMono text-left text-xl'>
                     - Uses TextBlob Python library to optain sentiment from text
                     </p>
                 </div>
 
                 <div style={{ padding: '20px' }}>
-                    <p className='font-burtons text-left text-2xl'>
+                    <p className='font-droidMono text-left text-2xl'>
                     Document List: 
                     </p>
-                    <p className='font-burtons text-left text-xl'>
+                    <p className='font-droidMono text-left text-xl'>
                     - displays all uploaded documents
                     </p>
                 </div>
 
                 <div style={{ padding: '20px' }}>
-                    <p className='font-burtons text-left text-2xl'>
+                    <p className='font-droidMono text-left text-2xl'>
                     Document View:
                     </p>
-                    <p className='font-burtons text-left text-xl'>
+                    <p className='font-droidMono text-left text-xl'>
                     - renders page that shows link to NLP and the text that was extracted
                     </p>
                 </div>
 
                 <div style={{ padding: '20px' }}>
-                    <p className='font-burtons text-left text-2xl'>
+                    <p className='font-droidMono text-left text-2xl'>
                     NLP:
                     </p>
-                    <p className='font-burtons text-left text-xl'>
+                    <p className='font-droidMono text-left text-xl'>
                     - renders page that will show sentiment analysis, GPT summary, and also creates a feature where you can search how many times a certain word appears in the respective text
                     </p>
                 </div>
 
                 <div style={{ padding: '20px' }}>
-                    <p className='font-burtons text-left text-2xl'>
+                    <p className='font-droidMono text-left text-2xl'>
                     Sentiment Def:
                     </p>
-                    <p className='font-burtons text-left text-xl'>
+                    <p className='font-droidMono text-left text-xl'>
                     - renders a page that shows the TextBlob website defentition for the sentiment value given that gives user insight on what the meaning of the analysis is
                     </p>
                 </div>
 
-                <h3 className='text-4xl font-medium pt-8 pb-2 font-burtons text-left'> Mongo DB: </h3>
-                <p className='font-burtons text-left text-xl'>
+                <h3 className='text-4xl font-medium pt-8 pb-2 font-droidMono text-left'> Mongo DB: </h3>
+                <p className='font-droidMono text-left text-xl'>
                     - Allows for more flexibility with sentiment analysis section by potentially allowing user to select different portions of text that they want to analyze
                 </p>
-                <p className='font-burtons text-left text-xl'>
+                <p className='font-droidMono text-left text-xl'>
                     - Due to the fact that the main entity of our project is a document, it would be very difficult to store this information in a structured table based format such as SQL
                 </p>
-                <p className='font-burtons text-left text-xl'>
+                <p className='font-droidMono text-left text-xl'>
                     - Wanted a highly flexible format that could easily be changed becuase new analysis tools are constantly being developed and added that we want to store in a database
                 </p>
 
