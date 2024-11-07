@@ -19,11 +19,13 @@ function Navbar() {
 
   return (
     <header className='bg-gradient-to-r from-cyan-500 to-violet-400 text-white px-4 py-2'>
-      <h3>Mike Terekhov</h3>
+      <Link href="/" className="font-droidMono">Mike Terekhov</Link>
       <nav ref={navRef} className={isNavOpen ? "responsive_nav" : ""}>
-        <Link href="/">Home</Link>
-        <Link href="/WorkPage">Projects</Link>
-        <Link href="/JobPage">Work Experience</Link>
+        <div className="font-droidMono"> 
+          <Link href="/" className="font-droidMono">Home</Link>
+          <Link href="/WorkPage" className="font-droidMono">Projects</Link>
+          <Link href="/JobPage" className="font-droidMono">Work Experience</Link>
+        </div>
         <button className="nav-btn nav-close-btn" onClick={closeNavbar}>
           <FaTimes />
         </button>

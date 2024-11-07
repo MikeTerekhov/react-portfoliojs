@@ -15,6 +15,7 @@ module.exports = {
       },
       fontFamily: {
         burtons : "burtons",
+        droidMono: ['"Droid Sans Mono"', 'monospace'],
       },
     },
   },
