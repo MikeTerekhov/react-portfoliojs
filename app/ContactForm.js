@@ -143,7 +143,7 @@ export default function ContactForm() {
       {/* Contact Bubble */}
       <div
         onClick={toggleForm}
-        className="fixed bottom-10 right-10 p-4 bg-violet-400 text-white rounded-full cursor-pointer transition transform hover:scale-110"
+        className="fixed bottom-10 right-10 p-4 bg-violet-400 text-white rounded-full cursor-pointer transition transform hover:scale-110 font-droidMono"
       >
         Contact Me
       </div>
@@ -152,9 +152,9 @@ export default function ContactForm() {
       {showForm && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-6 rounded-lg w-80 relative">
-            <h2 className="text-2xl mb-4 text-center">Contact Me</h2>
+            <h2 className="text-2xl mb-4 text-center font-droidMono">Contact Me</h2>
             <form ref={form} onSubmit={sendEmail}>
-              <label className="block mb-2">Name</label>
+              <label className="block mb-2 font-droidMono">Name</label>
               <input
                 type="text"
                 name="user_name"
@@ -162,7 +162,7 @@ export default function ContactForm() {
                 className="border w-full p-2 mb-4 rounded"
               />
 
-              <label className="block mb-2">Email</label>
+              <label className="block mb-2 font-droidMono">Email</label>
               <input
                 type="email"
                 name="user_email"
@@ -170,7 +170,7 @@ export default function ContactForm() {
                 className="border w-full p-2 mb-4 rounded"
               />
 
-              <label className="block mb-2">Message</label>
+              <label className="block mb-2 font-droidMono">Message</label>
               <textarea
                 name="message"
                 required
@@ -179,7 +179,7 @@ export default function ContactForm() {
 
               <button
                 type="submit"
-                className="w-full bg-violet-400 text-white py-2 rounded"
+                className="w-full bg-violet-400 text-white py-2 rounded font-droidMono"
               >
                 Send Message
               </button>
