@@ -9,8 +9,10 @@
 }
 
 @font-face {
-  font-family: "burtons";
-  src: url("../public/Burtons.otf");
+  font-family: "0xProtoNerdFont";
+  src: url("/0xProtoNerdFont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -21,6 +23,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: "0xProtoNerdFont", monospace;
 }
 
 .container {

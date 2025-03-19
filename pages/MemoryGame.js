@@ -8,7 +8,6 @@ import '@/app/workPage.css';
 import memory from "../public/memory.png";
 
 import Head from 'next/head';
-import Image from 'next/image';
 
 import start from "../public/emoji/start.png";
 import initial from "../public/emoji/initial.png";

@@ -17,13 +17,13 @@ function Navbar() {
 
   return (
     <header className='bg-gradient-to-r from-cyan-500 to-violet-400 text-white px-4 py-2'>
-      <Link href="/" className="font-droidMono">Mike Terekhov</Link>
+      <Link href="/" className="font-['0xProtoNerdFont']">Mike Terekhov</Link>
       <nav ref={navRef} className={isNavOpen ? "responsive_nav" : ""}>
-        <div className="font-droidMono"> 
-          <Link href="/" className="font-droidMono">Home</Link>
-          <Link href="/WorkPage" className="font-droidMono">Projects</Link>
-          <Link href="/JobPage" className="font-droidMono">Work Experience</Link>
-          <Link href = "/Placebo" className = "font-droidMono"> Placebo </Link>
+        <div className="font-['0xProtoNerdFont']"> 
+          <Link href="/" className="font-['0xProtoNerdFont']">Home</Link>
+          <Link href="/WorkPage" className="font-['0xProtoNerdFont']">Projects</Link>
+          <Link href="/JobPage" className="font-['0xProtoNerdFont']">Work Experience</Link>
+          <Link href="/Placebo" className="font-['0xProtoNerdFont']">Placebo</Link>
         </div>
         <button className="nav-btn nav-close-btn" onClick={closeNavbar}>
           <FaTimes />
