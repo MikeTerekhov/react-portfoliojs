@@ -17,9 +17,12 @@ import gears from "../public/gears.png";
 import computer from "../public/computer.png";
 import me from "../public/me.png";
 import pencil from "../public/pencil.png";
-import main from "../public/main2.png";
 
 import ContactForm from './ContactForm';
+
+// Import images for research projects
+import research1 from "../public/med.jpg";
+import research2 from "../public/eye.avif";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -47,7 +50,7 @@ export default function Home() {
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'> 
         
             <nav className='py-10 mb-12 flex justify-between'>
-              <h1 className='text-xl font-droidMono dark:text-white'>
+              <h1 className='text-xl font-["0xProtoNerdFont"] dark:text-white'>
                 Mike Terekhov
               </h1>
               <ul className='flex items-center'>
@@ -58,17 +61,19 @@ export default function Home() {
                   />
                 </li>
                 <li><a
-                className='bg-gradient-to-r from-cyan-500 to-violet-400 text-white px-4 py-2 rounded-md ml-8 font-droidMono'
-                href = "https://drive.google.com/file/d/1mxrRKMCGB85We-VsRQczcejRTEE42y2H/view?usp=drive_link"
+                className='bg-gradient-to-r from-cyan-500 to-violet-400 text-white px-4 py-2 rounded-md ml-8 font-["0xProtoNerdFont"]'
+                href="https://drive.google.com/file/d/1mxrRKMCGB85We-VsRQczcejRTEE42y2H/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Resume</a></li>
               </ul>
             </nav>
             <div className='text-center p-10'>
-              <h2 className='text-5xl py-2 text-violet-400 font-medium font-droidMono md:text-6xl'> Mike Terekhov </h2>
-              <h3 className='text-2xl py-2 md:text-3xl dark:text-white font-droidMono'>MS CS @ University of Southern California</h3>
-              <p className='text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-white font-droidMono'>Recent college graduate from Boston University with a B.S. in mechanical engineering with a concentration in machine learning and currently pursuing a M.S. in computer science at the University of Southern California</p>
+              <h2 className='text-5xl py-2 text-violet-400 font-medium font-["0xProtoNerdFont"] md:text-6xl'>Mike Terekhov</h2>
+              <h3 className='text-2xl py-2 md:text-3xl dark:text-white font-["0xProtoNerdFont"]'>MS CS @ University of Southern California</h3>
+              <p className='text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-white font-["0xProtoNerdFont"]'>
+                Recent college graduate from Boston University with a B.S. in mechanical engineering with a concentration in machine learning and currently pursuing a M.S. in computer science at the University of Southern California
+              </p>
             </div>
             <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
               <a href="https://www.linkedin.com/in/miketerekhov/" target="_blank" rel="noopener noreferrer">
@@ -88,125 +93,87 @@ export default function Home() {
               <ContactForm></ContactForm>
         
           <div>           
-            <h3 className = "text-3xl py-1 dark:text-white font-droidMono">My Background</h3>
+            <h3 className = "text-3xl py-1 dark:text-white font-['0xProtoNerdFont']">Current Research Projects</h3>
           </div>
-          <div className='lg:flex gap-10 font-droidMono'>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:w-1/3 font-droidMono'>
-                <Image src={pencil} width={100} height={100} className='mx-auto'/>
-                <h3 className='text-2xl font-medium pt-8 pb-2 font-droidMono'>Courses Taken</h3>
-                <h4 className='font-droidMono'>
-                Reinforcement Learning
-                </h4>
-                <h4 className='font-droidMono'>
-                Software Engineering
-                </h4>
-                <h4 className='font-droidMono'>
-                Machine Learning
-                </h4>
-                <h4 className='font-droidMono'>
-                Advanced Algorithms
-                </h4>
-                <h4 className='font-droidMono'>
-                Advanced Computer Vision
-                </h4>
-                <h4 className='font-droidMono'>
-                Computer Security Systems
-                </h4>
-                <h4 className='font-droidMono'>
-                Networks
-                </h4>
-                <h4 className='font-droidMono'>
-                Mechanics of Materials
-                </h4>
-                <h4 className='font-droidMono'>
-                Manufacturing
-                </h4>
-                <h4 className='font-droidMono'>
-                Instrumentation
-                </h4>
-                <h4 className='font-droidMono'>
-                Statics
-                </h4>
-                <h4 className='font-droidMono'>
-                Mechanics
-                </h4>
-                <h4 className='font-droidMono'>
-                Heat Transfer
-                </h4>
+          <div className='py-10'>
+            <div className='flex flex-col md:flex-row gap-8 mt-8'>
+              <div className='flex-1 text-center shadow-lg p-10 rounded-xl dark:bg-white'>
+                <Image 
+                  src={research1} 
+                  width={200} 
+                  height={200} 
+                  className='mx-auto mb-6'
+                  alt="Research Project 1"
+                  priority
+                />
+                <h3 className='text-2xl font-medium pt-4 pb-2 font-["0xProtoNerdFont"]'>HIV Research AI Regimen Project</h3>
+                <p className='text-gray-600 dark:text-gray-800 font-["0xProtoNerdFont"]'>
+                I am developing an AI-powered clinical decision tool using Retrieval-Augmented Generation (RAG) to optimize Antiretroviral Therapy recommendations for HIV patients globally. My project features a round-table style AI framework where multiple AI agents simulate perspectives of virologists, clinicians, and pharmacists to collaboratively refine treatments. I am implementing agentic workflows with Agents, Planning, and Reasoning Chains to analyze drug-mutation interactions and generate personalized treatment recommendations.
+                </p>
+              </div>
+              <div className='flex-1 text-center shadow-lg p-10 rounded-xl dark:bg-white'>
+                <Image 
+                  src={research2} 
+                  width={200} 
+                  height={200} 
+                  className='mx-auto mb-6'
+                  alt="Research Project 2"
+                  priority
+                />
+                <h3 className='text-2xl font-medium pt-4 pb-2 font-["0xProtoNerdFont"]'>Vision Transformer Research</h3>
+                <p className='text-gray-600 dark:text-gray-800 font-["0xProtoNerdFont"]'>
+                I am exploring methods to detect voids in Composite Oriented Strand Boards using machine learning, aiming for up to 95% accuracy. I formulated and implemented a Vision Transformer architecture with an encoder and 8 attention heads to explore advanced image representation techniques. My approach includes a preprocessing pipeline that segments 128×128 images into 16×16 patches for the Vision Transformer, enabling efficient processing of micro-CT scan data for void detection.
+                </p>
+              </div>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:w-1/3'>
-                <Image src={computer} width={100} height={100} className='mx-auto'/>
-                <h3 className='text-2xl font-medium pt-8 pb-2 font-droidMono'>Computer Skills</h3>
-                <h4 className='font-droidMono'>
-                C++
-                </h4>
-                <h4 className='font-droidMono'>
-                C
-                </h4>
-                <h4 className='font-droidMono'>
-                Python
-                </h4>
-                <h4 className='font-droidMono'>
-                JavaScript
-                </h4>
-                <h4 className='font-droidMono'>
-                Java
-                </h4>
-                <h4 className='font-droidMono'>
-                HTML
-                </h4>
-                <h4 className='font-droidMono'>
-                CSS
-                </h4>
-                <h4 className='font-droidMono'>
-                Keras
-                </h4>
-                <h4 className='font-droidMono'>
-                Tensorflow
-                </h4>
-                <h4 className='font-droidMono'>
-                Flask
-                </h4>
-                <h4 className='font-droidMono'>
-                SQLite
-                </h4>
-                <h4 className='font-droidMono'>
-                MongoDB
-                </h4>
-                <h4 className='font-droidMono'>
-                Postman
-                </h4>
-            </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:w-1/3'>
-                <Image src={gears} width={100} height={100} className='mx-auto'/>
-                <h3 className='text-2xl font-medium pt-8 pb-2 font-droidMono'>Mechanical Skills</h3>
-                <h4 className='font-droidMono'>
-                Solidworks
-                </h4> 
-                <h4 className='font-droidMono'>
-                NX
-                </h4>
-                <h4 className='font-droidMono'>
-                  AutoCAD
-                </h4> 
-                <h4 className='font-droidMono'>
-                  Laser-cutter
-                </h4> 
-                <h4 className='font-droidMono'>
-                 lathes
-                </h4> 
-                <h4 className='font-droidMono'>
-                  mills
-                </h4>
-                <h4 className='font-droidMono'>
-                  G-code
-                </h4> 
-                <h4 className='font-droidMono'>
-                COMSOL Multiphysics
-                </h4>  
-                <h4 className='font-droidMono'>
-                3D Printing - SLA & FDM
-                </h4> 
+          </div>
+        
+          <div>           
+            <h3 className = "text-3xl py-1 dark:text-white font-['0xProtoNerdFont']">Courses Taken</h3>
+          </div>
+          <div className='py-10'>
+            <div className='flex flex-col md:flex-row gap-8 mt-8'>
+              <div className='flex-1 text-center shadow-lg p-10 rounded-xl dark:bg-white'>
+                <Image 
+                  src={computer} 
+                  width={100} 
+                  height={100} 
+                  className='mx-auto mb-6'
+                  alt="Computer Science"
+                  priority
+                />
+                <h3 className='text-2xl font-medium pt-4 pb-2 font-["0xProtoNerdFont"]'>Computer Science</h3>
+                <div className='space-y-2'>
+                  <p className='font-["0xProtoNerdFont"]'>Reinforcement Learning</p>
+                  <p className='font-["0xProtoNerdFont"]'>Software Engineering</p>
+                  <p className='font-["0xProtoNerdFont"]'>Machine Learning</p>
+                  <p className='font-["0xProtoNerdFont"]'>Advanced Algorithms</p>
+                  <p className='font-["0xProtoNerdFont"]'>Advanced Computer Vision</p>
+                  <p className='font-["0xProtoNerdFont"]'>Computer Security Systems</p>
+                  <p className='font-["0xProtoNerdFont"]'>Networks</p>
+                </div>
+              </div>
+              <div className='flex-1 text-center shadow-lg p-10 rounded-xl dark:bg-white'>
+                <Image 
+                  src={gears} 
+                  width={100} 
+                  height={100} 
+                  className='mx-auto mb-6'
+                  alt="Mechanical Engineering"
+                  priority
+                />
+                <h3 className='text-2xl font-medium pt-4 pb-2 font-["0xProtoNerdFont"]'>Mechanical Engineering</h3>
+                <div className='space-y-2'>
+                  <p className='font-["0xProtoNerdFont"]'>Mechanics of Materials</p>
+                  <p className='font-["0xProtoNerdFont"]'>Manufacturing</p>
+                  <p className='font-["0xProtoNerdFont"]'>Instrumentation</p>
+                  <p className='font-["0xProtoNerdFont"]'>Statics</p>
+                  <p className='font-["0xProtoNerdFont"]'>Mechanics</p>
+                  <p className='font-["0xProtoNerdFont"]'>Heat Transfer</p>
+                  <p className='font-["0xProtoNerdFont"]'>Thermodynamics</p>
+                  <p className='font-["0xProtoNerdFont"]'>Fluid Mechanics</p>
+                </div>
+              </div>
             </div>
           </div>
         

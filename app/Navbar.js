@@ -21,9 +21,9 @@ function Navbar() {
       <nav ref={navRef} className={isNavOpen ? "responsive_nav" : ""}>
         <div className="font-['0xProtoNerdFont']"> 
           <Link href="/" className="font-['0xProtoNerdFont']">Home</Link>
-          <Link href="/WorkPage" className="font-['0xProtoNerdFont']">Projects</Link>
-          <Link href="/JobPage" className="font-['0xProtoNerdFont']">Work Experience</Link>
-          <Link href="/Placebo" className="font-['0xProtoNerdFont']">Placebo</Link>
+          <Link href="/projects" className="font-['0xProtoNerdFont']">Projects</Link>
+          <Link href="/work" className="font-['0xProtoNerdFont']">Work Experience</Link>
+          <Link href="/placebo" className="font-['0xProtoNerdFont']">Placebo</Link>
         </div>
         <button className="nav-btn nav-close-btn" onClick={closeNavbar}>
           <FaTimes />
