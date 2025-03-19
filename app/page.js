@@ -24,6 +24,14 @@ import ContactForm from './ContactForm';
 import research1 from "../public/med.jpg";
 import research2 from "../public/eye.avif";
 
+import Link from 'next/link';
+import stocks from "@/public/stocks.png";
+import chess2 from "@/public/chess2.png";
+import kart2 from "@/public/racekart2.png";
+import memory from "@/public/memory.png";
+import goose from "@/public/goose.png";
+import paper from "@/public/paper.jpg";
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -37,6 +45,12 @@ export default function Home() {
   useEffect(() => {
     localStorage.setItem('darkMode', darkMode);
   }, [darkMode]);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+    }
+  }, []);
 
   const iconColor = darkMode ? 'white' : 'black';
   return (
