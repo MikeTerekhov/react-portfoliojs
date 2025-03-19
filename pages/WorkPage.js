@@ -3,14 +3,13 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { useState } from "react";
 import Navbar from '@/app/Navbar';
 import '@/app/workPage.css';
-import kart from "../public/racekart.png";
-import paper from "../public/paper.jpg";
-import kart2 from "../public/racekart2.png";
-import goose from "../public/goose.png";
+import stocks from "../public/stocks.png";
 import chess2 from "../public/chess2.png";
+import kart2 from "../public/racekart2.png";
 import Link from 'next/link';
 import memory from "../public/memory.png";
-import stocks from "../public/stocks.png";
+import goose from "../public/goose.png";
+import paper from "../public/paper.jpg";
 import {useEffect } from 'react';
 
 function WorkPage() {

@@ -2,19 +2,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@font-face {
-    font-family: "burtons";
-    src: url("../public/Burtons.otf");
-  }
-
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	font-family: burtons;
 }
-
-
 
 :root {
 	--mainColor: #a27fde;

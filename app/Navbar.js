@@ -2,8 +2,6 @@ import "./main.css";
 import Link from 'next/link';
 import { useState, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import WorkPage from "../pages/WorkPage";
-import JobPage from "@/pages/JobPage";
 
 function Navbar() {
   const navRef = useRef();
@@ -25,6 +23,7 @@ function Navbar() {
           <Link href="/" className="font-droidMono">Home</Link>
           <Link href="/WorkPage" className="font-droidMono">Projects</Link>
           <Link href="/JobPage" className="font-droidMono">Work Experience</Link>
+          <Link href = "/Placebo" className = "font-droidMono"> Placebo </Link>
         </div>
         <button className="nav-btn nav-close-btn" onClick={closeNavbar}>
           <FaTimes />
