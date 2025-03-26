@@ -32,6 +32,8 @@ import memory from "@/public/memory.png";
 import goose from "@/public/goose.png";
 import paper from "@/public/paper.jpg";
 
+import robot from "@/public/robot_cartoon.jpg";
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -76,7 +78,7 @@ export default function Home() {
                 </li>
                 <li><a
                 className='bg-gradient-to-r from-cyan-500 to-violet-400 text-white px-4 py-2 rounded-md ml-8 font-["0xProtoNerdFont"]'
-                href="https://drive.google.com/file/d/1mxrRKMCGB85We-VsRQczcejRTEE42y2H/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1CJdsln-5Sb3HkYSj7GF2HR6qRObW2Cpa/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Resume</a></li>
@@ -100,9 +102,6 @@ export default function Home() {
                 <FaStrava style={{ color: iconColor }} />
               </a>
             </div>
-            {/* <div className='relative mx-auto bg-gradient-to-b from-purple-400 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96' style={{ zIndex: 1 }}>
-              <Image src={main} style={{ objectFit: 'cover' }}/>
-            </div> */}
         
               <ContactForm></ContactForm>
         
@@ -141,6 +140,33 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div>           
+            <h3 className = "text-3xl py-1 dark:text-white font-['0xProtoNerdFont']">Previous Research Projects</h3>
+          </div>
+          <div className='flex flex-col md:flex-row gap-8 mt-8'>
+              <div className='flex-1 text-center shadow-lg p-10 rounded-xl dark:bg-white'>
+                <Image 
+                  src={robot} 
+                  width={200} 
+                  height={200} 
+                  className='mx-auto mb-6'
+                  alt="Research Project 1"
+                  priority
+                />
+                <h3 className='text-2xl font-medium pt-4 pb-2 font-["0xProtoNerdFont"]'>AI vs Human Text Classifier</h3>
+                <p className='text-gray-600 dark:text-gray-800 font-["0xProtoNerdFont"]'>
+                In this project, my team and I set out to explore whether machine learning models could effectively distinguish between human-written and AI-generated high school essays. We gathered a diverse dataset that included original human essays, AI-generated essays using models like GPT-4, GPT-2, Mistral, and Gemma, as well as both AI- and human-paraphrased texts. We applied classical text analysis methods such as Bag of Words, TF-IDF, and SVMs, alongside a neural network using GloVe embeddings. While traditional methods performed well on standard AI text, we found that they struggled with identifying AI-paraphrased versions of human essays. However, our GloVe-based model showed strong performance even in these more nuanced cases. Through this work, we demonstrated both the potential and the challenges in detecting AI-generated content, particularly as language models become more adept at mimicking human writing.
+                </p>
+              <a
+                className='inline-block mt-4 px-6 py-2 bg-gradient-to-r from-cyan-500 to-violet-400 text-white rounded-md ml-8 font-["0xProtoNerdFont"]'
+                href="https://drive.google.com/file/d/14LZD5HWmaSDkxoTXJlk9Q7aZp51L5ofT/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Paper</a>
+              </div>
+            </div>
+
         
           <div>           
             <h3 className = "text-3xl py-1 dark:text-white font-['0xProtoNerdFont']">Courses Taken</h3>
@@ -158,6 +184,7 @@ export default function Home() {
                 />
                 <h3 className='text-2xl font-medium pt-4 pb-2 font-["0xProtoNerdFont"]'>Computer Science</h3>
                 <div className='space-y-2'>
+                  <p className='font-["0xProtoNerdFont"]'>Natural Language Processing</p>
                   <p className='font-["0xProtoNerdFont"]'>Reinforcement Learning</p>
                   <p className='font-["0xProtoNerdFont"]'>Software Engineering</p>
                   <p className='font-["0xProtoNerdFont"]'>Machine Learning</p>
