@@ -23,6 +23,7 @@ import ContactForm from './ContactForm';
 // Import images for research projects
 import research1 from "../public/med.jpg";
 import research2 from "../public/eye.avif";
+import db from "../public/db.png";
 
 import Link from 'next/link';
 import stocks from "@/public/stocks.png";
@@ -78,7 +79,7 @@ export default function Home() {
                 </li>
                 <li><a
                 className='bg-gradient-to-r from-cyan-500 to-violet-400 text-white px-4 py-2 rounded-md ml-8 font-["0xProtoNerdFont"]'
-                href="https://drive.google.com/file/d/1CJdsln-5Sb3HkYSj7GF2HR6qRObW2Cpa/view?usp=sharing"
+                href="https://drive.google.com/file/d/1EYo5bYWG-pNj8LbFZH0UlC2Dmkj6jLst/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Resume</a></li>
@@ -166,7 +167,28 @@ export default function Home() {
                 >View Paper</a>
               </div>
             </div>
-
+          <div className='flex flex-col md:flex-row gap-8 mt-8'>
+              <div className='flex-1 text-center shadow-lg p-10 rounded-xl dark:bg-white'>
+                <Image 
+                  src={db} 
+                  width={200} 
+                  height={200} 
+                  className='mx-auto mb-6'
+                  alt="Research Project 1"
+                  priority
+                />
+                <h3 className='text-2xl font-medium pt-4 pb-2 font-["0xProtoNerdFont"]'>LLM Text to SQL Model</h3>
+                <p className='text-gray-600 dark:text-gray-800 font-["0xProtoNerdFont"]'>
+                For this project, we developed a text-to-SQL system by fine-tuning the DeepSeek-Coder 1.3B model using Low-Rank Adaptation (LoRA) on a curated dataset of 1000+ natural language and SQL query pairs from an NBA database. We integrated a Retrieval-Augmented Generation (RAG) module to dynamically improve prompts based on schema similarity, which helped optimize model performance. Through fine-tuning and data augmentation strategies, we increased SQL validity by 22% and result correctness by 23% over the baseline. I also built a custom evaluation framework to track SQL validity, result accuracy, and query matching across experiments.
+                </p>
+              <a
+                className='inline-block mt-4 px-6 py-2 bg-gradient-to-r from-cyan-500 to-violet-400 text-white rounded-md ml-8 font-["0xProtoNerdFont"]'
+                href="https://drive.google.com/file/d/1WPwQyYXss8MZE6a_H0Cv_1-NQ6HgR1wJ/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Paper</a>
+              </div>
+            </div>
         
           <div>           
             <h3 className = "text-3xl py-1 dark:text-white font-['0xProtoNerdFont']">Courses Taken</h3>
