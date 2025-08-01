@@ -118,7 +118,7 @@ function ChessPage() {
 
                 <h3 className='text-4xl font-medium pt-8 pb-2 font-droidMono text-left'> Basic Requirements Satisfied:</h3>
                 <p className='font-droidMono text-xl text-left'>
-                - Local device user vs user gameplay
+      - Local device user vs user gameplay, test magit
                 </p>
                 <p className='font-droidMono text-xl text-left'>
                 - Local device user vs computer gameplay
