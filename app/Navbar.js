@@ -23,7 +23,6 @@ function Navbar() {
           <Link href="/" className="font-['0xProtoNerdFont']">Home</Link>
           <Link href="/projects" className="font-['0xProtoNerdFont']">Projects</Link>
           <Link href="/work" className="font-['0xProtoNerdFont']">Work Experience</Link>
-          <Link href="/placebo" className="font-['0xProtoNerdFont']">Placebo</Link>
           <Link href="/resilientai" className="font-['0xProtoNerdFont']">ResilientAI</Link>
           <Link href="/terminal" className="font-['0xProtoNerdFont']">Terminal</Link>
         </div>
