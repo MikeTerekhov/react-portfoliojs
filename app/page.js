@@ -53,7 +53,7 @@ export default function Home() {
               <ul className='flex items-center'>
                 <li><a
                 className='bg-gradient-to-r from-cyan-500 to-violet-400 text-white px-4 py-2 rounded-md ml-8 font-["0xProtoNerdFont"]'
-                href="https://drive.google.com/file/d/1EYo5bYWG-pNj8LbFZH0UlC2Dmkj6jLst/view?usp=sharing"
+                href="https://drive.google.com/file/d/1WottYI52WGizkozwfRnLm_hlz-4jYq25/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Resume</a></li>
@@ -63,7 +63,10 @@ export default function Home() {
               <h2 className='text-5xl py-2 text-violet-400 font-medium font-["0xProtoNerdFont"] md:text-6xl'>Mike Terekhov</h2>
               <h3 className='text-2xl py-2 md:text-3xl text-white font-["0xProtoNerdFont"]'>MS CS @ University of Southern California</h3>
               <p className='text-md py-5 leading-8 text-white md:text-xl font-["0xProtoNerdFont"]'>
-                Recent college graduate from Boston University with a B.S. in mechanical engineering with a concentration in machine learning and currently pursuing a M.S. in computer science at the University of Southern California
+                Boston University - B.S. Mechanical Engineering with a Concentration in Machine Learning
+              </p>
+              <p className='text-md py-5 leading-8 text-white md:text-xl font-["0xProtoNerdFont"]'>
+              University of Southern California - M.S. Computer Science
               </p>
             </div>
             <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
