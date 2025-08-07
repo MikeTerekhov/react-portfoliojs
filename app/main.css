@@ -92,3 +92,51 @@ nav {
 		font-size: 1.5rem;
 	}
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  /* Show hamburger button */
+  .nav-btn {
+    display: block;
+  }
+
+  /* Hide nav by default on mobile */
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(6, 182, 212), rgb(139, 92, 246));
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  /* Stack links vertically */
+  nav div {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  /* Show nav when responsive_nav class is added */
+  nav.responsive_nav {
+    right: 0;
+  }
+
+  /* Position close button */
+  .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+  }
+}
