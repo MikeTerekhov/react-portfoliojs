@@ -182,7 +182,7 @@ Type 'help' for available commands.`;
               </h1>
             </div>
             <p className='text-green-300 font-["0xProtoNerdFont"]'>
-              Type 'help' to see available commands
+              Type &apos;help&apos; to see available commands
             </p>
           </div>
 

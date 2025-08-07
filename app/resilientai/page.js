@@ -38,7 +38,7 @@ export default function ResilientAIDashboard() {
   }, [darkMode]);
 
   const handleBookSession = () => {
-    window.location.href = 'mailto:terekhovhd@gmail.com?subject=Resilient Running - Coaching Session&body=Hi! I\'m interested in booking a running coaching session. Please let me know about your availability and rates.';
+    window.location.href = 'mailto:terekhovhd@gmail.com?subject=Resilient Running - Coaching Session&body=Hi! I&apos;m interested in booking a running coaching session. Please let me know about your availability and rates.';
   };
 
   if (isLoading) {
@@ -140,10 +140,10 @@ export default function ResilientAIDashboard() {
               </div>
               <div className='space-y-4 text-gray-600 dark:text-gray-300 font-["0xProtoNerdFont"]'>
                 <p>
-                  As a competitive runner with years of experience pushing my own limits, I understand the mental and physical challenges that come with training. My journey from struggling to complete my first mile to achieving personal bests has taught me that every runner's path is unique.
+                  As a competitive runner with years of experience pushing my own limits, I understand the mental and physical challenges that come with training. My journey from struggling to complete my first mile to achieving personal bests has taught me that every runner&apos;s path is unique.
                 </p>
                 <p>
-                  With a Masters in Computer Science, I've developed a unique approach that combines traditional running wisdom with cutting-edge AI analytics. This allows me to provide personalized training plans that adapt to your progress, lifestyle, and goals.
+                  With a Masters in Computer Science, I&apos;ve developed a unique approach that combines traditional running wisdom with cutting-edge AI analytics. This allows me to provide personalized training plans that adapt to your progress, lifestyle, and goals.
                 </p>
                 <p>
                   I believe that the best coaching comes from someone who has both lived the experience and can leverage technology to optimize your training. My dual expertise in running and AI gives me a unique perspective that no traditional coach can offer.
@@ -445,7 +445,7 @@ export default function ResilientAIDashboard() {
                 🎯 Ultimate Goal: Break 2:20 Marathon
               </h4>
               <p className='font-["0xProtoNerdFont"] text-red-100'>
-                Pushing the boundaries of what's possible through dedicated training and AI-optimized preparation
+                Pushing the boundaries of what&apos;s possible through dedicated training and AI-optimized preparation
               </p>
             </div>
           </div>
