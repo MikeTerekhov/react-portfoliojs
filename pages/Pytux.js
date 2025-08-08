@@ -48,19 +48,7 @@ function Pytux() {
 
     <div className={darkMode ? "dark" : ""}>
       <div className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'> 
-        <section>
-            <nav className='py-10 mb-12 flex justify-between'>
-              <ul className='flex items-center'>
-                <li className="ml-auto">
-                  <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} 
-                  className='cursor-pointer text-2xl'
-                  style={{ color: iconColor }} 
-                  />
-                </li>
-              </ul>
-            </nav>
-        </section>
-          <div>           
+           <div>
             <h3 style={{ textAlign: 'center' }} className = "text-7xl py-1 dark:text-white font-burtons">Self-Driving Kart</h3>
           </div>
           <div className='gap-10'>

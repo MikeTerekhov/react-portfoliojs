@@ -10,7 +10,6 @@ import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
 import Navbar from './Navbar';
-import WorkPage from '@/pages/WorkPage';
 
 import gears from "../public/gears.png";
 import computer from "../public/computer.png";

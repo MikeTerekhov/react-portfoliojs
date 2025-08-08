@@ -48,11 +48,11 @@ export default function WorkPage() {
                 <h3 className='text-xl font-medium pt-8 pb-2 font-["0xProtoNerdFont"]'>GE Aerospace</h3>
                 <Image src={plane} width={400} height={400} className='mx-auto' alt="GE Aerospace" />
               </Link>
-              <h3 className='text-xl font-medium pt-8 pb-2 font-["0xProtoNerdFont"]'>Quality Engineering Intern</h3>
+              <h3 className='text-black text-xl font-medium pt-8 pb-2 font-["0xProtoNerdFont"]'>Quality Engineering Intern</h3>
             </div>
           </div>
         </main>
       </div>
     </>
   );
-} 
+}
