@@ -1,24 +1,19 @@
 "use client"; // This is a client component 👈🏽
-
 import { useState } from "react";
 import Navbar from '@/app/Navbar';
-
 import Image from 'next/image';
 import game_over from "../public/game_over.png";
 import {useEffect } from 'react';
+import '../app/globals.css';
 
 function TraderIOS() {
-
   return (
     <>
     <Navbar />
-
     <div >
-      <div className='bg-white md:px-20 lg:px-40 dark:bg-gray-900'>
-
-
-          <div>           
-            <h3 style={{ textAlign: 'center' }} className = "pt-4 text-7xl py-1 dark:text-white font-droidMono">Stock Trader IOS</h3>
+      <div className='bg-gray-900 md:px-20 lg:px-40'>
+          <div>
+            <h3 style={{ textAlign: 'center' }} className="text-white text-7xl py-8 px-4 font-droidMono">Stock Trader IOS</h3>
           </div>
                             <div style={{
                                 display: 'flex',
@@ -35,5 +30,4 @@ function TraderIOS() {
     </>
   )
 }
-
 export default TraderIOS;

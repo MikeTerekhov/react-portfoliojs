@@ -28,9 +28,9 @@ function ChessPage() {
     <>
     <Navbar/>
 
-      <div className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
+      <div className='bg-gray-900 px-10 md:px-20 lg:px-40'>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
-            <h3 style={{ textAlign: 'center' }} className = "text-black text-7xl py-1  font-droidMono">Android Chess Application</h3>
+                <h3 style={{ textAlign: 'center' }} className="text-white text-7xl py-8 px-4 font-droidMono">Android Chess Application</h3>
 
             <ul style={{ margin: 10, padding: 10, listStyle: 'none' }}>
                 <li style={{ display: 'flex', justifyContent: 'center' }}>
@@ -43,20 +43,11 @@ function ChessPage() {
                 </a>
                 </li>
 
-                {/* <li style={{ display: 'flex', justifyContent: 'center', margin: 20 }}>
-                <a
-                className='bg-gradient-to-r from-cyan-500 to-violet-400 text-white px-4 py-2 rounded-md ml-8'
-                href = "https://drive.google.com/file/d/1azJUkuiKh-R_SPTCkGS0RP66cnYv5kCU/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Demo Video
-                </a>
-                </li> */}
-                </ul>
+                       </ul>
 
           </div>
 
-          <div style={{ textAlign: 'center' }} className = "text-7xl py-1 dark:text-white font-burtons">
+          <div style={{ textAlign: 'center' }} className="text-7xl py-1 text-white font-burtons">
           <div style={{
                                 display: 'flex',
                                 justifyContent: 'center',
@@ -71,7 +62,7 @@ function ChessPage() {
           </div>
 
           <div className='gap-10'>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
+            <div className='bg-white text-center shadow-lg p-10 rounded-xl my-10'>
                 <Image src={chess2} width={400} height={400} className='mx-auto'/>
                 <h3 className='text-black text-4xl font-medium pt-8 pb-2 font-droidMono text-left'> Objective & Background:</h3>
                 <p className='text-black font-droidMono text-xl'>
