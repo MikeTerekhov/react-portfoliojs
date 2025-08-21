@@ -16,8 +16,6 @@ import computer from "../public/computer.png";
 import me from "../public/me.png";
 import pencil from "../public/pencil.png";
 
-import ContactForm from './ContactForm';
-
 // Import images for research projects
 import research1 from "../public/med.jpg";
 import research2 from "../public/eye.avif";
@@ -80,9 +78,7 @@ export default function Home() {
               </a>
             </div>
         
-              <ContactForm></ContactForm>
-        
-          <div>           
+          <div>
             <h3 className = "text-3xl py-1 text-white font-['0xProtoNerdFont']">Current Research Projects</h3>
           </div>
           <div className='py-10'>
