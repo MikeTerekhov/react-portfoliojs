@@ -25,6 +25,7 @@ function Navbar() {
           <Link href="/work" className="font-['0xProtoNerdFont']">Work Experience</Link>
           <Link href="/resilientai" className="font-['0xProtoNerdFont']">ResilientAI</Link>
           <Link href="/terminal" className="font-['0xProtoNerdFont']">Terminal</Link>
+          {/* <Link href="/sports" className="font-['0xProtoNerdFont']">Sports</Link> */}
         </div>
         <button className="nav-btn nav-close-btn" onClick={closeNavbar}>
           <FaTimes />

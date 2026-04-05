@@ -20,6 +20,7 @@ import pencil from "../public/pencil.png";
 import research1 from "../public/med.jpg";
 import research2 from "../public/eye.avif";
 import db from "../public/db.png";
+import brain_ai from "../public/brain_ai.png";
 
 import Link from 'next/link';
 import stocks from "@/public/stocks.png";
@@ -50,7 +51,7 @@ export default function Home() {
               <ul className='flex items-center'>
                 <li><a
                 className='bg-gradient-to-r from-cyan-500 to-violet-400 text-white px-4 py-2 rounded-md ml-8 font-["0xProtoNerdFont"]'
-                href="https://drive.google.com/file/d/1WottYI52WGizkozwfRnLm_hlz-4jYq25/view?usp=sharing"
+                href="https://drive.google.com/file/d/1PPI6Rgj5Xje7oTGvK7KsKx4EiGUkkxlI/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Resume</a></li>
@@ -97,20 +98,36 @@ export default function Home() {
                 I am developing an AI-powered clinical decision tool using Retrieval-Augmented Generation (RAG) to optimize Antiretroviral Therapy recommendations for HIV patients globally. My project features a round-table style AI framework where multiple AI agents simulate perspectives of virologists, clinicians, and pharmacists to collaboratively refine treatments. I am implementing agentic workflows with Agents, Planning, and Reasoning Chains to analyze drug-mutation interactions and generate personalized treatment recommendations.
                 </p>
               </div>
+              
               <div className='flex-1 text-center shadow-lg p-10 rounded-xl bg-white'>
                 <Image 
-                  src={research2} 
+                  src={brain_ai} 
                   width={200} 
                   height={200} 
                   className='mx-auto mb-6'
-                  alt="Research Project 2"
+                  alt="Research Project 1"
                   priority
                 />
-                <h3 className='text-2xl font-medium pt-4 pb-2 font-["0xProtoNerdFont"]'>Vision Transformer Research</h3>
-                <p className='text-gray-600 text-gray-800 font-["0xProtoNerdFont"]'>
-                I am exploring methods to detect voids in Composite Oriented Strand Boards using machine learning, aiming for up to 95% accuracy. I formulated and implemented a Vision Transformer architecture with an encoder and 8 attention heads to explore advanced image representation techniques. My approach includes a preprocessing pipeline that segments 128×128 images into 16×16 patches for the Vision Transformer, enabling efficient processing of micro-CT scan data for void detection.
+                <h3 className='text-2xl font-medium pt-4 pb-2 font-["0xProtoNerdFont"]'>ACL Injury Biomechanics AI Project</h3>
+                <div className='text-gray-600 text-gray-800 font-["0xProtoNerdFont"] space-y-4'>
+                <p className = 'padding-40'>
+                Using multimodal biomechanical sensor data collected across multiple clinical time points, you trained an LSTM-based classifier to distinguish between three groups: Control, Non-Injured, and Injured athletes in the context of ACL injury.
                 </p>
+                <p>
+                The goal of this project was to specifically see if we can identify between movement patterns of fully healthy legs versus the non-injured leg of athletes who have experienced an ACL injury. Using this knowledge, the model aims to detect subtle biomechanical differences that may indicate compensatory movement strategies or lingering deficits in the non-injured leg that could predispose athletes to future injury. With this data, we can help injured patients better understand their movement patterns and potentially guide rehabilitation strategies to reduce the risk of re-injury.
+                </p>
+                <p>
+                The model processes full temporal sequences of normalized features, learning patterns across time to classify each subject. Experimenting with varying numbers of training epochs and roughly 54,000 parameters, the model showed strongest performance on the Control class, while Non-Injured and Injured subjects proved harder to separate, a clinically meaningful challenge given how similar their movement patterns can be post-injury. Results were further broken down by clinical time point and sex to assess where the model generalizes well and where it struggles.
+                </p>
+                </div>
+                <a
+                className='inline-block mt-4 px-6 py-2 bg-gradient-to-r from-cyan-500 to-violet-400 text-white rounded-md ml-8 font-["0xProtoNerdFont"]'
+                href="https://drive.google.com/file/d/1AR15rWVOSsmMFi4_51sSqp8PdXaIJw0l/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Most Recent Presentation</a>
               </div>
+
             </div>
           </div>
 
@@ -160,7 +177,25 @@ export default function Home() {
                 rel="noopener noreferrer"
                 >View Paper</a>
               </div>
+              
             </div>
+
+            <div className='flex flex-col md:flex-row gap-8 mt-8'>
+              <div className='flex-1 text-center shadow-lg p-10 rounded-xl bg-white'>
+                <Image 
+                  src={research2} 
+                  width={200} 
+                  height={200} 
+                  className='mx-auto mb-6'
+                  alt="Research Project 2"
+                  priority
+                />
+                <h3 className='text-2xl font-medium pt-4 pb-2 font-["0xProtoNerdFont"]'>Vision Transformer Research</h3>
+                <p className='text-gray-600 text-gray-800 font-["0xProtoNerdFont"]'>
+                I am exploring methods to detect voids in Composite Oriented Strand Boards using machine learning, aiming for up to 95% accuracy. I formulated and implemented a Vision Transformer architecture with an encoder and 8 attention heads to explore advanced image representation techniques. My approach includes a preprocessing pipeline that segments 128×128 images into 16×16 patches for the Vision Transformer, enabling efficient processing of micro-CT scan data for void detection.
+                </p>
+              </div>
+          </div>
       </main>
     </div>
     </>
