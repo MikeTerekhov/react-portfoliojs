@@ -10,6 +10,7 @@ import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
 import Navbar from './Navbar';
+import pencil_2 from "../public/pencil_2.png"
 
 import gears from "../public/gears.png";
 import computer from "../public/computer.png";
@@ -137,9 +138,9 @@ export default function Home() {
           <div className='flex flex-col md:flex-row gap-8 mt-8'>
               <div className='flex-1 text-center shadow-lg p-10 rounded-xl bg-white'>
                 <Image 
-                  src={robot} 
-                  width={200} 
-                  height={200} 
+                  src={pencil_2} 
+                  width={50} 
+                  height={50} 
                   className='mx-auto mb-6'
                   alt="Research Project 1"
                   priority

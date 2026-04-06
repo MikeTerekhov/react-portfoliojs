@@ -37,21 +37,21 @@ export default function ProjectsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className='text-center shadow-lg p-10 rounded-xl dark:bg-white'>
               <Link href="/TraderIOS" className="block">
-                <Image src={stocks} width={200} height={200} className='mx-auto' alt="Stock Trader IOS" />
+                <Image src={stocks} width={250} height={250} className='mx-auto' alt="Stock Trader IOS" />
               </Link>
               <h3 className='text-black text-xl font-medium pt-8 pb-2 font-["0xProtoNerdFont"]'>Stock Trader IOS</h3>
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl dark:bg-white'>
               <Link href="/ChessPage" className="block">
-                <Image src={chess2} width={200} height={200} className='mx-auto' alt="Android Chess App" />
+                <Image src={chess2} width={150} height={150} className='mx-auto' alt="Android Chess App" />
               </Link>
               <h3 className='text-black text-xl font-medium pt-8 pb-2 font-["0xProtoNerdFont"]'>Android Chess App</h3>
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl dark:bg-white'>
               <Link href="/Pytux" className="block">
-                <Image src={kart2} width={200} height={200} className='mx-auto' alt="Self-Driving Kart" />
+                <Image src={kart2} width={300} height={300} className='mx-auto' alt="Self-Driving Kart" />
               </Link>
               <h3 className='text-black text-xl font-medium pt-8 pb-2 font-["0xProtoNerdFont"]'>Self-Driving Kart</h3>
             </div>
